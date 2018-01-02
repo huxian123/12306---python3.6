@@ -95,26 +95,3 @@ class TrainsCollection:
             pt.add_row(train)
         print(pt)
 
-
-# def cli():
-#     """
-#     command-line interface
-#     """
-#     arguments = docopt(__doc__)
-#     train_date = input('请输入出发时间例如(2017-12-12):')
-#     from_station = stations[input('请输入出发城市(长沙):')]
-#     to_station = stations[input('请输入到达城市(深圳):')]
-#     url = (
-#     'https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date={}&leftTicketDTO.from_station={'
-#     '}&leftTicketDTO.to_station={}&purpose_codes=ADULT').format(
-#         train_date, from_station, to_station)
-#     options = ''.join([key for key, value in arguments.items() if value is True])
-#     r = requests.get(url, verify=False)
-#     available_trains = r.json()['data']['result']
-#     TrainsCollection(available_trains).pretty_print()
-#
-#
-# if __name__ == '__main__':
-#     cli()
-# # https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2017-12-02&leftTicketDTO.from_station=CQW
-# # &leftTicketDTO.to_station=TJP&purpose_codes=ADULT
