@@ -121,8 +121,8 @@ class Poster(object):
             return
 
         data = {
-            'username': 'huxian12_',
-            'password': 'yuji19890728',
+            'username': 'username',#12306用户名
+            'password': 'passwd',#12306密码
             'appid': 'otn'
         }
 
